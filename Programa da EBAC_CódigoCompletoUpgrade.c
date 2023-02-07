@@ -123,6 +123,7 @@ int main()
 		printf("\t1 - Registrar nomes\n");
 		printf("\t2 - Consultar nomes\n");
 		printf("\t3 - Deletar nomes\n");
+		printf("\t4 - Sair do sistema\n\n");
 		printf("\nOpção: "); //fim do menu
 	
 		scanf ("%d", &opcao); //armazenando a escolha do usuário
@@ -142,6 +143,11 @@ int main()
 			
 			case 3: //caso a variável tenha valor 3 ele tem que fazer a instrução abaixo
 			deletar(); //chamando a função DELETAR criada no início do código, antes da função principal MAIN
+			break;
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0; //é o função para sair do sistema
 			break;
 
 			default: //caso a variável tenha valor diferente de 1, 2 ou 3, ele tem que fazer a instrução abaixo
