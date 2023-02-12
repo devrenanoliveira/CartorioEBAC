@@ -16,7 +16,7 @@ int registro() //função REGISTRO criada, sendo possível chamar ela em outro mome
 	printf("Digite o CPF a ser cadastrado: ");
 	scanf("%s", cpf); // O %s significa armazenamento da STRING
 	
-	strcpy(nomeArquivo, cpf); //responsável por copiar os valores das string
+	strcpy(nomeArquivo, cpf); //responsável por copiar os valores da string CPF no nome do arquivo (nomeArquivo)
 	
 	printf("Digite o nome a ser cadastrado: ");
 	scanf("%s", nome);
@@ -79,7 +79,7 @@ int consulta() //função CONSULTA criada, sendo possível chamar ela em outro mome
 	char textoFinal[400];
 	int opcao = 0;
 	
-	printf("Digite o CPF a ser consultado: ");
+	printf("Digite o CPF a ser consultado: "); //Recebendo qual o usuário está sendo consultado
 	scanf("%s",cpf);
 	
 	FILE *file;
@@ -191,12 +191,10 @@ int main()
 	if(comparacao == 0)
 	{
 
-	
-		for(laco=1;laco=1;) //tradução: faça quantoas vezes eu pedir -> a variável LACO enquanto for valor 1 (entrada), ele deve ficar no "for" até 1x o menu (saída) e sempre subindo 1 (x++)
-		{
+		system("cls"); //limpo a tela de opções para deixar o programa mais amigável e organizado para o usuário
 		
-			system("cls"); //limpo a tela de opções para deixar o programa mais amigável e organizado para o usuário
-			
+		for(laco=1;laco=1;) //tradução: faça quantoas vezes eu pedir -> a variável LACO enquanto for valor 1 (entrada), ele deve ficar no "for" até 1x o menu (saída) e sempre subindo 1 (x++)
+		{	
 			printf("\n ### Bem-vinda(o) ao Cartório da EBAC ### \n\n"); //início do menu		
 			printf("Escolha a opção desejada do menu: \n\n");
 			printf("\t1 - Registrar nomes\n");
