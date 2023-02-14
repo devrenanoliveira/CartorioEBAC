@@ -59,7 +59,7 @@ int registro() //função REGISTRO criada, sendo possível chamar ela em outro mome
         break;
       	
 		case 2:
-        main();
+        return 0;
         break;
         
 		default: //caso a variável tenha valor diferente de 1, 2 ou 3, ele tem que fazer a instrução abaixo
@@ -113,7 +113,7 @@ int consulta() //função CONSULTA criada, sendo possível chamar ela em outro mome
         break;
       	
 		case 2:
-        main();
+        return 0;
         break;
         
 		default: //caso a variável tenha valor diferente de 1, 2 ou 3, ele tem que fazer a instrução abaixo
@@ -162,7 +162,7 @@ int deletar() //função DELETAR criada, sendo possível chamar ela em outro moment
         break;
       	
 		case 2:
-        main();
+        return 0;
         break;
         
 		default: //caso a variável tenha valor diferente de 1, 2 ou 3, ele tem que fazer a instrução abaixo
